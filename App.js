@@ -2,20 +2,20 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { Button, Card, Input, ScheduleGrid } from './src/components'; // ← Add Card and Input
 import { createStaticNavigation } from '@react-navigation/native';
-import HomeScreen from './src/screens/HomeScreen';
-import AboutScreen from './src/screens/AboutScreen';
-import LoginScreen from './src/screens/LoginScreen';
-import SignupScreen from './src/screens/SignupScreen';
-import ScheduleScreen from './src/screens/ScheduleScreen';
+import HomeScreen from './src/screens/Home/HomeScreen';
+import LoginScreen from './src/screens/auth/LoginScreen';
+import RegisterScreen from './src/screens/auth/RegisterScreen';
+import ScheduleScreen from './src/screens/Schedule/ScheduleScreen';
+import ProfileScreen from './src/screens/Profile/ProfileScreen';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const stack = createNativeStackNavigator({
   screens: {
     Home: HomeScreen,
-    About: AboutScreen,
     Login: LoginScreen,
-    Signup: SignupScreen,
+    Register: RegisterScreen,
     Schedule: ScheduleScreen,
+    Profile: ProfileScreen,
   },
 });
 const Navigation = createStaticNavigation(stack);
