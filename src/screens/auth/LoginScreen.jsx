@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { View, Text, Pressable } from "react-native";
-import { AuthContext } from "../../context/AuthContext";
+import { AuthContext } from "../../contexts/AuthContext";
 
 import Input from "../../components/Input";
 import Button from "../../components/Button";
